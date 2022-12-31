@@ -654,6 +654,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    padding: 24px;
+
     min-width: 408px;
     min-height: 576px;
 
@@ -684,6 +686,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.close-btn:hover, 
+.close-btn:focus {
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.modal-title {
+    margin: 48px 0 0 0;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 
