@@ -414,15 +414,23 @@
             </li>
           </ul>
         </div>
-        <form>
+        <form class="foot-form">
           <label for="foot-mail" class="subscribe-label"> Subscribe </label>
           <input
             type="email"
             name="email"
             placeholder="E-mail"
             id="foot-mail"
+            class="subscribe-input"
           />
-          <button type="submit" class="subscribe-btn">Subscribe</button>
+          <button type="submit" class="subscribe-btn">
+            <div class="subscr-btn-cont">
+              Subscribe
+              <svg height="24" width="24" class="subscribe-btn-img">
+                <use href="./images/icons.svg#subscr"></use>
+              </svg>
+            </div>
+          </button>
         </form>
       </div>
     </footer>
@@ -465,6 +473,15 @@
             <input type="checkbox" name="privacy-policy" value="accept" />
             I accept the terms and conditions of the Privacy Policy
           </div>
+          <svg height="24" width="18">
+            <use href="./images/icons.svg#mail"></use>
+          </svg>
+          <svg height="24" width="18">
+            <use href="./images/icons.svg#phone"></use>
+          </svg>
+          <svg height="24" width="18">
+            <use href="./images/icons.svg#user"></use>
+          </svg>
 
           <button type="submit">Subscribe</button>
         </form>

@@ -229,11 +229,13 @@ body {
 
 .left-foot-box {
     margin: 0;
-    padding: 0;
+    padding: 0 40px 0 0;
 }
 
 .footer-flex {
     display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 .footer-logo {
@@ -258,7 +260,7 @@ body {
 }
 
 .sm-links-foot-box {
-    margin: 0 80px 0 120px;
+    margin: 0;
     padding: 0;
 }
 
@@ -295,6 +297,11 @@ body {
     fill: var(--clr-success);
 }
 
+.foot-form {
+    margin: 0;
+    padding: 0;
+}
+
 .subscribe-label {
     display: flex;
     flex-direction: column;
@@ -308,9 +315,20 @@ body {
     color: var(--clr-white);
 }
 
+.subscribe-input {
+    padding: 0 0 0 16px;
+    width: 264px;
+    height: 40px;
+
+    background-color: var(--clr-navy-blue);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
 .subscribe-btn {
     padding: 8px 24px;
-    margin: 0;
+    margin: 0 0 0 12px;
 
     background: var(--clr-iris);
     border-radius: 4px;
@@ -323,23 +341,20 @@ body {
     color: var(--clr-white);
     font-family: 'Roboto', sans-serif;
 
+    fill: var(--clr-white);
+
     cursor: pointer;
 
     transition:
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-btn::after {
-    content: "";
-    display: inline-block;
+.subscr-btn-cont {
+    display: flex;
+    gap: 16px;
 
-    width: 24px;
-    height: 24px;
-
-    margin: 0 0 0 16px;
-
-    background-image: url(../images/icons.svg#subscr-btn);
-    
+    margin: 0;
+    padding: 0;
 }
 
 .subscribe-btn:hover {
