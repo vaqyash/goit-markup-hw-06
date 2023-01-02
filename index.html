@@ -449,41 +449,37 @@
             <p id="modal-title" class="modal-title">
               Leave your contacts and we will call you back
             </p>
-            <label>
+            <label class="form-label">
               Name
               <input type="text" name="username" class="form-elem" />
             </label>
-            <label>
+            <label class="form-label">
               Phone
               <input type="tel" name="tel" class="form-elem" />
             </label>
-            <label>
+            <label class="form-label">
               Email
               <input type="email" name="email" class="form-elem" />
             </label>
-            <label>
-              Feedback
+            <label class="form-label">
+              Comment
               <textarea
                 name="feedback"
                 rows="5"
-                placeholder="Type your message here..."
+                placeholder="Text input"
                 class="form-elem"
               ></textarea>
             </label>
-            <input type="checkbox" name="privacy-policy" value="accept" />
-            I accept the terms and conditions of the Privacy Policy
           </div>
-          <svg height="24" width="18">
-            <use href="./images/icons.svg#mail"></use>
-          </svg>
-          <svg height="24" width="18">
-            <use href="./images/icons.svg#phone"></use>
-          </svg>
-          <svg height="24" width="18">
-            <use href="./images/icons.svg#user"></use>
-          </svg>
+          <div class="modal-checkbox">
+            <input type="checkbox" name="privacy-policy" value="accept" />
+            <p class="modal-checkbox">
+              I accept the terms and conditions of the
+              <a href="#" class="privacy-policy-link"> Privacy Policy</a>
+            </p>
+          </div>
 
-          <button type="submit">Subscribe</button>
+          <button type="submit" class="order-btn">Send</button>
         </form>
       </div>
     </div>
