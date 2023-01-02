@@ -796,10 +796,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-.form-elem-box {
-    position: relative;
-}
-
 .form-label {
     font-size: 12px;
     line-height: 1.167;
@@ -807,35 +803,59 @@ body {
     color: var(--clr-light-slate);
 }
 
+.form-elem-box {
+    position: relative;
+}
+
 .form-elem {
     display: flex;
 
-    padding: 8px 16px;
+    padding-left: 34px;
+    margin: 4px 0 8px 0;
 
     width: 360px;
     height: 40px;
 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+}
+
+.form-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    margin: 0;
+
+    width: 18px;
+    height: 24px;
+}
+
+.comment-elem {
+    padding: 8px 16px;
+
+    height: 120px;
+
+    resize: none;
+}
+
+.comment-elem::placeholder {
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-icon {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-
-    margin: 0;
-
-    width: 8px;
-    height: 8px;
-
-    background-color: tomato;
+.form-elem:focus {
+    border: 1px solid var(--clr-iris);
 }
 
-.comment-elem {
-    height: 120px;
+.form-elem:focus + .form-icon {
+    fill: var(--clr-iris);
 }
 
 .modal-checkbox {
