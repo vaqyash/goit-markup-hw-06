@@ -449,27 +449,54 @@
             <p id="modal-title" class="modal-title">
               Leave your contacts and we will call you back
             </p>
-            <label class="form-label">
-              Name
-              <input type="text" name="username" class="form-elem" />
-            </label>
-            <label class="form-label">
-              Phone
-              <input type="tel" name="tel" class="form-elem" />
-            </label>
-            <label class="form-label">
-              Email
-              <input type="email" name="email" class="form-elem" />
-            </label>
-            <label class="form-label">
-              Comment
-              <textarea
-                name="feedback"
-                rows="5"
-                placeholder="Text input"
+            <div class="form-elem-box">
+              <label for="modal-name" class="form-label"> Name </label>
+              <input
+                type="text"
+                name="username"
+                id="modal-name"
                 class="form-elem"
-              ></textarea>
-            </label>
+              />
+              <span class="form-icon">
+                <svg height="8" width="8">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="form-elem-box">
+              <label for="modal-tel" class="form-label"> Phone </label>
+              <input type="tel" name="tel" id="modal-tel" class="form-elem" />
+              <span class="form-icon">
+                <svg height="8" width="8">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="form-elem-box">
+              <label for="form-mail" class="form-label"> Email </label>
+              <input
+                type="email"
+                name="email"
+                id="form-mail"
+                class="form-elem"
+              />
+              <span class="form-icon">
+                <svg height="8" width="8">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </span>
+            </div>
+            <div>
+              <label class="form-label">
+                Comment
+                <textarea
+                  name="feedback"
+                  rows="5"
+                  placeholder="Text input"
+                  class="form-elem comment-elem"
+                ></textarea>
+              </label>
+            </div>
           </div>
           <div class="modal-checkbox">
             <input type="checkbox" name="privacy-policy" value="accept" />
@@ -478,8 +505,9 @@
               <a href="#" class="privacy-policy-link"> Privacy Policy</a>
             </p>
           </div>
-
-          <button type="submit" class="order-btn">Send</button>
+          <div class="centring-box">
+            <button type="submit" class="order-btn">Send</button>
+          </div>
         </form>
       </div>
     </div>

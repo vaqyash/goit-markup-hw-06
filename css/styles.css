@@ -38,6 +38,11 @@ body {
     justify-content: space-between;
 }
 
+.centring-box {
+    display: flex;
+    justify-content: center;
+}
+
 .column {
     flex-direction: column;
 }
@@ -773,7 +778,8 @@ body {
 }
 
 .form {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -790,6 +796,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.form-elem-box {
+    position: relative;
+}
+
 .form-label {
     font-size: 12px;
     line-height: 1.167;
@@ -803,11 +813,29 @@ body {
     padding: 8px 16px;
 
     width: 360px;
+    height: 40px;
 
     font-size: 12px;
     line-height: 1.167;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.form-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    margin: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: tomato;
+}
+
+.comment-elem {
+    height: 120px;
 }
 
 .modal-checkbox {
