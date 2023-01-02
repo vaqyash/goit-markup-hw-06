@@ -414,6 +414,16 @@
             </li>
           </ul>
         </div>
+        <form>
+          <label for="foot-mail" class="subscribe-label"> Subscribe </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            id="foot-mail"
+          />
+          <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
       </div>
     </footer>
 
@@ -425,7 +435,39 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="form">
+          <div class="form-group" role="group" aria-labelledby="modal-title">
+            <p id="modal-title" class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+            <label>
+              Name
+              <input type="text" name="username" class="form-elem" />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="tel" class="form-elem" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" class="form-elem" />
+            </label>
+            <label>
+              Feedback
+              <textarea
+                name="feedback"
+                rows="5"
+                placeholder="Type your message here..."
+                class="form-elem"
+              ></textarea>
+            </label>
+            <input type="checkbox" name="privacy-policy" value="accept" />
+            I accept the terms and conditions of the Privacy Policy
+          </div>
+
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
