@@ -851,7 +851,8 @@ body {
 }
 
 .form-elem:focus {
-    border: 1px solid var(--clr-iris);
+    outline: 1px solid var(--clr-iris);
+    border: transparent;
 }
 
 .form-elem:focus + .form-icon {
