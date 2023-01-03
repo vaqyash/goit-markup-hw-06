@@ -445,7 +445,7 @@
         </button>
 
         <form class="form">
-          <div class="form-group" role="group" aria-labelledby="modal-title">
+          <div role="group" aria-labelledby="modal-title">
             <p id="modal-title" class="modal-title">
               Leave your contacts and we will call you back
             </p>
@@ -498,13 +498,21 @@
               </label>
             </div>
           </div>
-          <div class="modal-checkbox">
-            <input type="checkbox" name="privacy-policy" value="accept" />
-            <p class="modal-checkbox">
-              I accept the terms and conditions of the&nbsp;
-              <a href="#" class="privacy-policy-link"> Privacy Policy</a>
-            </p>
-          </div>
+          <label class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              value="accept"
+              class="checkbox"
+            />
+            <span class="checkbox-btn">
+              <svg height="8" width="10">
+                <use href="./images/icons.svg#checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a href="#" class="privacy-policy-link"> Privacy Policy</a>
+          </label>
           <div class="centring-box">
             <button type="submit" class="order-btn">Send</button>
           </div>

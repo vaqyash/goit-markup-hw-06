@@ -12,9 +12,11 @@
     --clr-slate: #434455;
     --clr-light-slate: #8E8F99;
     --clr-iris: #4D5AE5;
+    --clr-btn-hover: #404BBF;
     --clr-white: #ffffff;
     --clr-cloud: #F4F4FD;
     --clr-cornflower: #E7E9FC;
+    --clr-modal-bgd: #FCFCFC;
     --clr-success: #31D0AA;
     --font-logo: 'Raleway', sans-serif;
     --font-main: 'Roboto', sans-serif
@@ -369,7 +371,7 @@ body {
 }
 
 .subscribe-btn:hover {
-    background-color: #404BBF;
+    background-color: var(--clr-btn-hover);
 }
 
 
@@ -450,7 +452,7 @@ body {
 }
 
 .order-btn:hover {
-    background-color: #404BBF;
+    background-color: var(--clr-btn-hover);
 }
 
 
@@ -639,7 +641,7 @@ body {
     margin: 0;
     padding: 0;
 
-    border: 0.5px solid #F4F4FD;
+    border: 0.5px solid var(--clr-cloud);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     
     transition: box-shadow 250ms 
@@ -737,10 +739,10 @@ body {
 
     padding: 24px;
 
-    width: 408px;
-    height: 576px;
+    min-width: 408px;
+    min-height: 576px;
 
-    background-color: #FCFCFC;
+    background-color: var(--clr-modal-bgd);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -782,12 +784,8 @@ body {
     flex-direction: column;
 }
 
-.form-group {
-   
-}
-
 .modal-title {
-    margin: 48px 0 0 0;
+    margin: 48px 0 16px 0;
 
     text-align: center;
     font-weight: 600;
@@ -833,6 +831,8 @@ body {
 
     width: 18px;
     height: 24px;
+
+    fill: var(--clr-navy-blue);
 }
 
 .comment-elem {
@@ -863,14 +863,45 @@ body {
     display: flex;
     flex-direction: row;
 
-    margin: 16px 0 0 8px;
-    padding: 0;
-
+    margin: 12px 0 0 0;
+    padding: 0 0 0 24px;
+    
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.04em;
-    color: #757575;;
+    color: #757575;
+
+    cursor: pointer;
+}
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkbox-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 24px;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1.25px solid var(--clr-navy-blue);
+    border-radius: 2px;
+
+    background-color: var(--clr-modal-bgd);
+    fill: var(--clr-modal-bgd);
+}
+
+.checkbox:checked + .checkbox-btn {
+    background-color: var(--clr-iris);
+    fill: var(--clr-cloud);
 }
 
 .privacy-policy-link {
@@ -880,7 +911,6 @@ body {
     text-decoration: none;
     color: var(--clr-iris);
 }
-
 
 
 
