@@ -720,14 +720,16 @@ body {
     background-color: rgba(46, 47, 66, 0.4);
 
     transform: scaleY(100%);
-    transition: transform 250ms 
-    cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    /* visibility: hidden; */
+
     transform: scaleY(0%);
 }
 
@@ -773,10 +775,16 @@ body {
 
 .close-btn:hover, 
 .close-btn:focus {
+    background-color: var(--clr-iris);
     box-shadow: 
     0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.close-btn:hover .close-cross,
+.close-btn:focus .close-cross {
+    fill: var(--clr-white);
 }
 
 .form {
@@ -908,7 +916,7 @@ body {
     margin: 0;
     padding: 0;
 
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--clr-iris);
 }
 
